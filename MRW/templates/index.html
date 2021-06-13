@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block welcome %}
+<h1> Film Öneri Motoru</h1>
+{% endblock welcome  %}
+
+{% block content %}
+  <form  action="/recommender" method="POST">
+
+        <label for="movie_name" class="form-label">Film Listesi</label>
+        <input class="form-control" list="datalistOptions" id="movie_name" name="movie_name" placeholder="Lütfen bir film seçiniz...">
+        <datalist id="datalistOptions">
+            {% for title in titles %}
+                <option> {{ title }}</option>
+            {% endfor %}
+        </datalist>
+     <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+{% endblock %}

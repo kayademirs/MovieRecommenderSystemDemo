@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block welcome %}
+<h1> Beğenebileceğiniz Filmler</h1>
+{% endblock welcome  %}
+
+{% block content %}
+
+                {% for movie in recommenders %}
+                    <div class="body bg-light py-1 rounded-3 my-1 ">
+                        <ul class="d-md-flex justify-content-between text-black text-center">
+                            <li>{{ movie }}</li>
+                        </ul>
+                    </div>
+                {% endfor %}
+
+{% endblock %}

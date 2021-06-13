@@ -1,0 +1,39 @@
+body {
+  padding: 100px;
+}
+
+.navigation {
+  top: 50px;
+  right: 50px;
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+}
+.navigation ul li {
+  list-style: none;
+  float: left;
+  margin: 10px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.navigation ul li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+}
+.navigation ul li a i {
+  text-align: center;
+}
+.navigation ul li a:hover {
+  opacity: 0.7;
+}
+
+.appointments {
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,114 @@
+body {
+  padding: 100px;
+
+}
+
+.navigation {
+  top: 50px;
+  right: 50px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      float: left;
+      margin: 10px;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+
+      a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        line-height: 40px;
+
+        i {
+          text-align: center;
+        }
+      }
+
+      a:hover {
+        opacity: .7;
+      }
+    }
+  }
+}
+
+
+.appointments {
+  padding: 30px;
+  margin-bottom: 100px;
+
+  .table {
+    .header {
+      ul {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+
+        li {
+          width: 25%;
+          list-style: none;
+          float: left;
+
+          ul {
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+              float: right;
+            }
+
+            li:last-child {
+              float: left;
+            }
+          }
+        }
+      }
+    }
+
+    .body {
+      ul {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+
+        li {
+          width: 25%;
+          list-style: none;
+        }
+
+
+      }
+    }
+
+    .body:hover {
+      background-color: #fa9dab !important;
+      color: #ffffff !important;
+      opacity: .7;
+
+      > ul {
+        li {
+          ul {
+            li {
+              a {
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-add {
+  bottom: 30px;
+  right: 30px;
+}
+
+
+

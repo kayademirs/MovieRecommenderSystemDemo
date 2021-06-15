@@ -17,7 +17,13 @@ def hello_world():
 def recommender():
     movie_name = request.form['movie_name']
     recommenders = get_movie_list(movie_name)
-    return render_template('recommender.html', recommenders=recommenders)
+    if len(recommenders) == 0:
+        print(recommenders)
+        return render_template('recommender.html', recommenders=['Sorry. I couldn\'t find any movie to recommend. '
+                                                                 'I will improve myself on this.'])
+    else:
+        print(recommenders)
+        return render_template('recommender.html', recommenders=recommenders)
 
 
 if __name__ == '__main__':

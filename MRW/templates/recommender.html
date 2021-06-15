@@ -1,11 +1,11 @@
 {% extends 'layout.html' %}
 
 {% block welcome %}
-<h1> Beğenebileceğiniz Filmler</h1>
+<h2> My suggestion to you: </h2>
 {% endblock welcome  %}
 
 {% block content %}
-
+<div class="div">
                 {% for movie in recommenders %}
                     <div class="body bg-light py-1 rounded-3 my-1 ">
                         <ul class="d-md-flex justify-content-between text-black text-center">
@@ -13,5 +13,5 @@
                         </ul>
                     </div>
                 {% endfor %}
-
+</div>
 {% endblock %}

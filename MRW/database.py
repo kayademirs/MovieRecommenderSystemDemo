@@ -1,11 +1,13 @@
 def connect_db():
     from sqlalchemy import create_engine
     import mysql.connector
-    creds = {'user': 'root',
+
+    #  The database was used to pull the movie titles.
+    creds = {'user': '',
              'passwd': '',
-             'host': 'localhost',
-             'port': 3306,
-             'db': 'hrs'
+             'host': '',
+             'port': '',
+             'db': ''
              }
 
     # MySQL conection string.

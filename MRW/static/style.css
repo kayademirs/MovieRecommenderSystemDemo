@@ -1,0 +1,67 @@
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10%;
+            }
+        body::after {
+              content: "";
+              background: url('img/background_image.jpg');
+              opacity: 0.5;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              position: absolute;
+              z-index: -1;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+            padding: 15px 15px 15px 15px;
+        }
+        .div {
+            padding: 15px 15px 15px 15px;
+            margin: 15px 15px 15px 15px;
+            position: relative;
+
+        }
+
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+
+        button {
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+
+        button:hover {
+          opacity: 0.8;
+        }
+
+
+        .container {
+            position: relative;
+            width: 50%;
+            height: 50%;
+            background-color: #070c04;
+            opacity: 90%;
+            padding: 5%;
+        }
+
+        .background-image {
+            opacity: 50%;
+        }
+

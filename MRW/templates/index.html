@@ -1,14 +1,15 @@
 {% extends 'layout.html' %}
 
 {% block welcome %}
-<h1> Film Öneri Motoru</h1>
+<h2> Choose your favorite movie: </h2>
 {% endblock welcome  %}
 
 {% block content %}
+<div class="div">
   <form  action="/recommender" method="POST">
 
-        <label for="movie_name" class="form-label">Film Listesi</label>
-        <input class="form-control" list="datalistOptions" id="movie_name" name="movie_name" placeholder="Lütfen bir film seçiniz...">
+        <label for="movie_name" style="color: #ffffff" class="form-label">Movie List</label>
+        <input class="form-control" list="datalistOptions" id="movie_name" name="movie_name" placeholder="Please select a movie...">
         <datalist id="datalistOptions">
             {% for title in titles %}
                 <option> {{ title }}</option>
@@ -17,5 +18,5 @@
      <button type="submit" class="btn btn-primary">Submit</button>
 
     </form>
-
+</div>
 {% endblock %}

@@ -1,11 +1,13 @@
-# MovieRecommenderSystem
 
-Projenin amacı kullanıcının daha önce izlemiş olduğu filme göre kullanıcıya beğenebileceği 5 farklı film önerisi sunmaktır. 
+# MovieRecommenderSystemDemo
 
-Anasayfada kullanıcıya seçim yapması için film listesi veri tabanından çekilmektedir.  
+The aim of the project is to offer new movie suggestions to the user based on the movie the user watches. I implemented the recommendation system using the Item Based Collaboration method. I used the film lens dataset while developing the recommendation system.
 
-![home](https://user-images.githubusercontent.com/24978269/121819219-8ac00c00-cc94-11eb-8390-32713526d3ca.PNG)
 
-Daha önce kayıt edilen model ile kullanıcının seçtiği filme göre öneriler listelenmektir. 
+![home](https://user-images.githubusercontent.com/24978269/122039008-e39bbb80-cdde-11eb-9ba1-95f4d4f73111.PNG)
 
-![recommender](https://user-images.githubusercontent.com/24978269/121819244-b216d900-cc94-11eb-9c7b-386799347437.PNG)
+
+According to the movie selected by the user, 5 movie suggestions are offered.
+
+![recommender](https://user-images.githubusercontent.com/24978269/122039051-ec8c8d00-cdde-11eb-8cf7-eabce2a9de47.PNG)
+
